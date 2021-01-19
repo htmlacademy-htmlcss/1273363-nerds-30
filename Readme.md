@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Михаил Москвичев](https://up.htmlacademy.ru/htmlcss/30/user/1273363).
-* Наставник: `Неизвестно`.
+* Наставник: [Борис Слонов](https://htmlacademy.ru/profile/slonov_boris).
 
 ---
 
