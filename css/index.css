@@ -1,0 +1,249 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --header-slider-background: #eeeeee;
+  --header-slider-button-background: #fb565a;
+  --header-slider-button-background-hover: #e74246;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.wrapper-header, .wrapper-slider {
+  background-color: var(--header-slider-background);
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: .8;
+}
+
+.logo:visited {
+  opacity: .3;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu-item, .shopping-cart {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.88;
+  letter-spacing: 0.25px;
+  color: var(--basic-black);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-item:hover, .shopping-cart:hover {
+  color: var(--header-slider-button-background);
+}
+
+.menu-item:visited, .shopping-cart:visited {
+  opacity: .3;
+}
+
+.slider-item__title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.slider-item__description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+}
+
+.slider-item__button {
+  background-color: var(--header-slider-button-background);
+  color: var(--basic-white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.slider-item__button:hover {
+  background-color: var(--header-slider-button-background-hover);
+}
+
+.slider-item.second, .slider-item.third {
+  display: none;
+}
+
+.product {
+	list-style-type: none;
+}
+
+.product-card__title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.product-card__description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05;
+}
+
+.product-card__button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: var(--basic-white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-card__button.red {
+  background-color: var(--header-slider-button-background);
+}
+
+.product-card__button.red:hover {
+  background-color: #e74246;
+}
+
+.product-card__button.green {
+  background-color: #00ca74;
+}
+
+.product-card__button.green:hover {
+  background-color: #00bc6c;
+}
+
+.product-card__button.yellow {
+  background-color: #efc84a;
+}
+
+.product-card__button.yellow:hover {
+  background-color: #eab534;
+}
+
+.about-title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.about-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.services {
+  font-size: 16px;
+  line-height: 1.5;
+  list-style-type: none;
+}
+
+.services.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.stats-title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.percent-symbol {
+  font-size: 24px;
+}
+
+.stats-item__percent {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 0.22;
+  color: var(--basic-black);
+  text-transform: lowercase;
+}
+
+.stats-item__name {
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: left;
+  color: #283136;
+}
+
+.contacts-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+}
+
+.contacts-adress {
+  font-size: 16px;
+  line-height: 1.13;
+  color: #666666;
+}
+
+.contacts-adress-link {
+  color: #666666;
+  text-decoration: none;
+}
+
+.contacts-button, .feedback-button {
+  background-color: #fb565a;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+.contacts-button:hover, .feedback-button:hover {
+  background-color: #d6494d;
+}
+
+.social-icons {
+  list-style-type: none;
+}
+
+.social-icons__item {
+  background-color: #e1e1e1;
+}
+
+.social-icons__item:hover {
+  background-color: var(--header-slider-button-background);
+}
+
+.tagline {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--basic-black);
+}
+
+.discount {
+  font-size: 16px;
+  line-height: 1.38;
+  color: #444;
+}
+
+.feedback {
+  background-color: #ffffff;
+}
+
+.feedback-name, .feedback-mail, .feedback-text {
+  font-size: 16px;
+}
+
+.feedback-title {
+  font-size: 45px;
+}
