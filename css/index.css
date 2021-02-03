@@ -4,6 +4,31 @@
   --header-slider-background: #eeeeee;
   --header-slider-button-background: #fb565a;
   --header-slider-button-background-hover: #e74246;
+  --product-card-button-green: #00ca74;
+  --product-card-button-green-hover: #00bc6c;
+  --product-card-button-yellow: #efc84a;
+  --product-card-button-yellow-hover: #eab534;
+  --stats-item-name: #283136;
+  --filter-inputs: #bdc3c7;
+  --filter-form-button: #ededed;
+  --filter-form-button-hover: #dfdfdf;
+  --filter-form-button-active-background: #d5d5d5;
+  --filter-form-button-active: #9d9d9d;
+  --range-controls: #f1f1f1;
+  --range-controls-scale: #d7dcde;
+  --range-controls-toggle: #ababab;
+  --range-controls-toggle-shadow: #cfcfcf;
+  --sorting-list: #b2b2b2;
+  --sorting-list-hover: #666666;
+  --sorting-controls-icon: #a6a6a6;
+  --sorting-controls-icon-hover: #010101;
+  --catalog-items: #e9e9e9;
+  --catalog-items-hover: #4d4d4d;
+  --hidden-info: #6f6f6f;
+  --pagination: #f2f2f2;
+  --discount: #444444;
+  --social-icons: #e1e1e1;
+  --contacts-button-hover: #d6494d;
 }
 
 * {
@@ -112,23 +137,23 @@
 }
 
 .product-card__button.red:hover {
-  background-color: #e74246;
+  background-color: var(----header-slider-button-background-hover);
 }
 
 .product-card__button.green {
-  background-color: #00ca74;
+  background-color: var(--product-card-button-green);
 }
 
 .product-card__button.green:hover {
-  background-color: #00bc6c;
+  background-color: var(--product-card-button-green);
 }
 
 .product-card__button.yellow {
-  background-color: #efc84a;
+  background-color: var(--product-card-button-yellow);
 }
 
 .product-card__button.yellow:hover {
-  background-color: #eab534;
+  background-color: var(--product-card-button-yellow-hover);
 }
 
 .about-title {
@@ -177,12 +202,12 @@
   font-size: 16px;
   line-height: 1.13;
   text-align: left;
-  color: #283136;
+  color: var(--stats-item-name);
 }
 
 .wrapper-title {
   width: 100%;
-  background-color: #eee;
+  background-color: var(--header-slider-background);
 }
 
 .shop-title {
@@ -190,7 +215,7 @@
   font-weight: 500;
   line-height: 1;
   text-align: center;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .filters ul li {
@@ -207,8 +232,8 @@
   width: 12px;
   height: 12px;
   vertical-align: middle;
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 3px #bdc3c7;
+  border: 3px solid var(--basic-white);
+  box-shadow: 0 0 0 3px var(--filter-inputs);
   left: 0;
 }
 
@@ -226,7 +251,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #bdc3c7;
+  background: var(--filter-inputs);
   top: 4px;
   left: 4px;
 }
@@ -238,7 +263,7 @@
   height: 5px;
   left: 0px;
   top: -6px;
-  border: 5px solid #bdc3c7;
+  border: 5px solid var(--filter-inputs);
   border-top-color: transparent;
   border-right-color: transparent;
   transform:rotate(-45deg);
@@ -265,7 +290,7 @@ fieldset.filter-item legend {
 .filter-form fieldset label {
   font-size: 16px;
   position: relative;
-  color: #283136;
+  color: var(--stats-item-name);
   transition: color 0.6s ease;
   display: inline-block;
   margin-bottom: 21px;
@@ -279,7 +304,7 @@ fieldset.filter-item legend {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #ededed;
+  background-color: var(--filter-form-button);
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -287,12 +312,12 @@ fieldset.filter-item legend {
 }
 
 .filter-form-button:hover {
-  background-color: #dfdfdf;
+  background-color: var(--filter-form-button-hover);
 }
 
 .filter-form-button:active {
-  background-color: #d5d5d5;
-  color: #9d9d9d;
+  background-color: var(--filter-form-button-active-background);
+  color: var(--filter-form-button-active);
 }
 
 .range-controls {
@@ -300,19 +325,19 @@ fieldset.filter-item legend {
   height: 40px;
   margin-bottom: 20px;
   padding: 39px 20px;
-  background-color: #f1f1f1;
+  background-color: var(--range-controls);
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: var(--range-controls-scale);
 }
 
 .range-controls .bar {
   width: 65%;
   height: 2px;
-  background: #00ca74;
+  background: var(--product-card-button-green);
 }
 
 .range-controls .toggle {
@@ -322,9 +347,9 @@ fieldset.filter-item legend {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border: 8px solid var(--basic-white);
+  background-color: var(--range-controls-toggle);
+  box-shadow: 0 2px 1px 0 var(--range-controls-toggle-shadow);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -345,10 +370,10 @@ fieldset.filter-item legend {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   text-align: center;
-  color: #283136;
+  color: var(--stats-item-name);
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: var(--range-controls);
 }
 
 .max-price {
@@ -370,16 +395,16 @@ fieldset.filter-item legend {
   font-size: 14px;
   margin-right: 22px;
   cursor: pointer;
-  color: #b2b2b2;
+  color: var(--sorting-list);
   text-transform: uppercase;
 }
 
 .sorting-list li:hover {
-  color: #666666;
+  color: var(--sorting-list-hover);
 }
 
 .sorting-list li:active, .sorting-list li:focus {
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .sorting-list li:last-child {
@@ -393,7 +418,7 @@ fieldset.filter-item legend {
 .sorting-controls .icon-down-dir {
   position: absolute;
   display: block;
-  border: 5px solid #a6a6a6;
+  border: 5px solid var(--sorting-controls-icon);
   border-top-width: 10px;
   border-right-color: transparent;
   border-bottom-width: 0px;
@@ -404,7 +429,7 @@ fieldset.filter-item legend {
 }
 
 .sorting-controls .active, .sorting-controls .icon-down-dir:hover {
-  border: 5px solid  #010101;
+  border: 5px solid  var(--sorting-controls-icon-hover);
   border-top-width: 10px;
   border-right-color: transparent;
   border-bottom-width: 0px;
@@ -412,7 +437,7 @@ fieldset.filter-item legend {
 }
 
 .sorting-controls .icon-up-dir:hover {
-  border: 5px solid #010101;
+  border: 5px solid var(--sorting-controls-icon-hover);
   border-top-width: 0px;
   border-right-color: transparent;
   border-bottom-width: 10px;
@@ -422,7 +447,7 @@ fieldset.filter-item legend {
 .sorting-controls .icon-up-dir {
   position: absolute;
   display: block;
-  border: 5px solid #a6a6a6;
+  border: 5px solid var(--sorting-controls-icon);
   border-top-width: 0px;
   border-right-color: transparent;
   border-bottom-width: 10px;
@@ -436,34 +461,34 @@ fieldset.filter-item legend {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: background 0.6s ease;
-  background-color: #e9e9e9;
+  background-color: var(--catalog-items);
   position: relative;
 }
 
 .items li:hover {
-  background-color: #4d4d4d;
+  background-color: var(--catalog-items-hover);
 }
 
 .hidden-info {
   opacity: 0;
-  background-color: #eeeeee;
+  background-color: var(--header-slider-background);
 }
 
 .hidden-info h3 a {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-  color: #000000;
+  color: var(--basic-black);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .hidden-info h3 a:hover {
-  color: #fb565a;
+  color: var(--header-slider-button-background);
 }
 
 .hidden-info p {
-  color: #6f6f6f;
+  color: var(--hidden-info);
   margin-top: 18px;
   max-width: 180px;
   text-align: center;
@@ -471,13 +496,13 @@ fieldset.filter-item legend {
 
 .hidden-info a.hidden-info-button {
   text-decoration: none;
-  color: #ffffff;
-  background-color: #fb565a;
+  color: var(--basic-white);
+  background-color: var(--header-slider-button-background);
   border-radius: 2px;
 }
 
 .hidden-info a.hidden-info-button:hover {
-  background-color: #e74246;
+  background-color: var(--header-slider-button-background-hover);
 }
 
 .item-header {
@@ -487,7 +512,7 @@ fieldset.filter-item legend {
 
 .item-header span {
   display: inline-block;
-  background-color: #ffffff;
+  background-color: var(--basic-white);
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -497,37 +522,37 @@ fieldset.filter-item legend {
 .pagination a.num {
   font-size: 16px;
   line-height: 34px;
-  background-color: #f2f2f2;
-  border: 3px solid #f2f2f2;
+  background-color: var(--pagination);
+  border: 3px solid var(--pagination);
   border-radius: 3px;
-  color: #000000;
+  color: var(--basic-black);
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .pagination a.num:hover, .pagination a.num.active:hover {
-  background-color: #dfdfdf;
-  border-color: #dfdfdf;
+  background-color: var(--filter-form-button-hover);
+  border-color: var(--filter-form-button-hover);
 }
 
 .pagination a.num.active {
-  background: #fff;
+  background: var(--basic-white);
 }
 
 .pagination .next {
   font-size: 16px;
   line-height: 34px;
-  background-color: #f2f2f2;
+  background-color: var(--pagination);
   border-radius: 3px;
-  color: #000000;
+  color: var(--basic-black);
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .pagination .next:hover {
-  background-color: #dfdfdf;
+  background-color: var(--filter-form-button-hover);
 }
 
 .contacts-title {
@@ -539,16 +564,16 @@ fieldset.filter-item legend {
 .contacts-adress {
   font-size: 16px;
   line-height: 1.13;
-  color: #666666;
+  color: var(--sorting-list-hover);
 }
 
 .contacts-adress-link {
-  color: #666666;
+  color: var(--sorting-list-hover);
   text-decoration: none;
 }
 
 .contacts-button, .feedback-button {
-  background-color: #fb565a;
+  background-color: var(--header-slider-button-background);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.13;
@@ -558,7 +583,7 @@ fieldset.filter-item legend {
 }
 
 .contacts-button:hover, .feedback-button:hover {
-  background-color: #d6494d;
+  background-color: var(--contacts-button-hover);
 }
 
 .social-icons {
@@ -566,7 +591,7 @@ fieldset.filter-item legend {
 }
 
 .social-icons__item {
-  background-color: #e1e1e1;
+  background-color: var(--social-icons);
 }
 
 .social-icons__item:hover {
@@ -583,11 +608,11 @@ fieldset.filter-item legend {
 .discount {
   font-size: 16px;
   line-height: 1.38;
-  color: #444;
+  color: var(--discount);
 }
 
 .feedback {
-  background-color: #ffffff;
+  background-color: var(--basic-white);
 }
 
 .feedback-name, .feedback-mail, .feedback-text {
