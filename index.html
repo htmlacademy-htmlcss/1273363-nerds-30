@@ -27,8 +27,8 @@
 		    <li>
 		      <a class="menu-item" href="#">Контакты</a>
 		    </li>
-		    <a class="shopping-cart" href="#">Корзина</a>
 		  </ul>
+		  <a class="shopping-cart" href="#">Корзина</a>
 	    </nav>
 	  </header>
 	</div>  
@@ -80,6 +80,7 @@
 		  </li>
 		</ul>
 	  </section>
+	  <hr class="divider">
 	  <div class="wrapper-about">
 	    <section class="about">
 	      <p class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
@@ -113,7 +114,7 @@
 	  <section class="clients">
 	    <ul class="clients-list">
 		    <li>
-		      <a href="#">
+		      <a href="https://htmlacademy.ru/intensive/htmlcss">
 			    <img src="img/htmlacademy-logo.png" width="199" height="68" alt="Логотип htmlacademy">
 			  </a>
 		    </li>
@@ -134,7 +135,7 @@
 		    </li>
 		  </ul>
 	  </section>
-	  <section class="wrapper-map">
+	  <section class="wrapper-map" id="map">
 	    <div class="wrapper-contacts">
           <div class="wrapper-form">
             <div class="contacts">
@@ -145,6 +146,7 @@
               <button class="contacts-button" type="button">Напишите нам</button>
             </div>
           </div>
+		  <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Месторасположение NЁRDS">
         </div>
 	  </section>
 	</main>
@@ -178,5 +180,7 @@
       </p>
       <button class="feedback-button">Отправить</button>
     </form>
+	<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
