@@ -618,7 +618,7 @@ fieldset.filter-item legend {
   width: 80px;
   padding: 8px 12px;
   margin-left: 10px;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   color: var(--stats-item-name);
